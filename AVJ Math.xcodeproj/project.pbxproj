@@ -14,6 +14,10 @@
 		75DF10732BA07AFE00BD7F6F /* AVJ_MathTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DF10722BA07AFE00BD7F6F /* AVJ_MathTests.swift */; };
 		75DF107D2BA07AFE00BD7F6F /* AVJ_MathUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DF107C2BA07AFE00BD7F6F /* AVJ_MathUITests.swift */; };
 		75DF107F2BA07AFE00BD7F6F /* AVJ_MathUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DF107E2BA07AFE00BD7F6F /* AVJ_MathUITestsLaunchTests.swift */; };
+		75DF10902BA07B2800BD7F6F /* CameraStreamView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DF108D2BA07B2800BD7F6F /* CameraStreamView.swift */; };
+		75DF10912BA07B2800BD7F6F /* CameraVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DF108E2BA07B2800BD7F6F /* CameraVM.swift */; };
+		75DF10952BA07B2D00BD7F6F /* FingersOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DF10922BA07B2D00BD7F6F /* FingersOverlay.swift */; };
+		75DF10962BA07B2D00BD7F6F /* MathVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DF10932BA07B2D00BD7F6F /* MathVM.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +49,10 @@
 		75DF10782BA07AFE00BD7F6F /* AVJ MathUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "AVJ MathUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		75DF107C2BA07AFE00BD7F6F /* AVJ_MathUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AVJ_MathUITests.swift; sourceTree = "<group>"; };
 		75DF107E2BA07AFE00BD7F6F /* AVJ_MathUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AVJ_MathUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		75DF108D2BA07B2800BD7F6F /* CameraStreamView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraStreamView.swift; sourceTree = "<group>"; };
+		75DF108E2BA07B2800BD7F6F /* CameraVM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraVM.swift; sourceTree = "<group>"; };
+		75DF10922BA07B2D00BD7F6F /* FingersOverlay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FingersOverlay.swift; sourceTree = "<group>"; };
+		75DF10932BA07B2D00BD7F6F /* MathVM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MathVM.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +107,8 @@
 				75DF10622BA07AFC00BD7F6F /* ContentView.swift */,
 				75DF10642BA07AFE00BD7F6F /* Assets.xcassets */,
 				75DF10662BA07AFE00BD7F6F /* AVJ_Math.entitlements */,
+				75DF108F2BA07B2800BD7F6F /* Camera */,
+				75DF10942BA07B2D00BD7F6F /* Math */,
 				75DF10672BA07AFE00BD7F6F /* Preview Content */,
 			);
 			path = "AVJ Math";
@@ -127,6 +137,24 @@
 				75DF107E2BA07AFE00BD7F6F /* AVJ_MathUITestsLaunchTests.swift */,
 			);
 			path = "AVJ MathUITests";
+			sourceTree = "<group>";
+		};
+		75DF108F2BA07B2800BD7F6F /* Camera */ = {
+			isa = PBXGroup;
+			children = (
+				75DF108D2BA07B2800BD7F6F /* CameraStreamView.swift */,
+				75DF108E2BA07B2800BD7F6F /* CameraVM.swift */,
+			);
+			path = Camera;
+			sourceTree = "<group>";
+		};
+		75DF10942BA07B2D00BD7F6F /* Math */ = {
+			isa = PBXGroup;
+			children = (
+				75DF10922BA07B2D00BD7F6F /* FingersOverlay.swift */,
+				75DF10932BA07B2D00BD7F6F /* MathVM.swift */,
+			);
+			path = Math;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,6 +287,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75DF10902BA07B2800BD7F6F /* CameraStreamView.swift in Sources */,
+				75DF10952BA07B2D00BD7F6F /* FingersOverlay.swift in Sources */,
+				75DF10962BA07B2D00BD7F6F /* MathVM.swift in Sources */,
+				75DF10912BA07B2800BD7F6F /* CameraVM.swift in Sources */,
 				75DF10632BA07AFC00BD7F6F /* ContentView.swift in Sources */,
 				75DF10612BA07AFC00BD7F6F /* AVJ_MathApp.swift in Sources */,
 			);

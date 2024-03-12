@@ -1,0 +1,622 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		75DF10612BA07AFC00BD7F6F /* AVJ_MathApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DF10602BA07AFC00BD7F6F /* AVJ_MathApp.swift */; };
+		75DF10632BA07AFC00BD7F6F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DF10622BA07AFC00BD7F6F /* ContentView.swift */; };
+		75DF10652BA07AFE00BD7F6F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75DF10642BA07AFE00BD7F6F /* Assets.xcassets */; };
+		75DF10692BA07AFE00BD7F6F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75DF10682BA07AFE00BD7F6F /* Preview Assets.xcassets */; };
+		75DF10732BA07AFE00BD7F6F /* AVJ_MathTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DF10722BA07AFE00BD7F6F /* AVJ_MathTests.swift */; };
+		75DF107D2BA07AFE00BD7F6F /* AVJ_MathUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DF107C2BA07AFE00BD7F6F /* AVJ_MathUITests.swift */; };
+		75DF107F2BA07AFE00BD7F6F /* AVJ_MathUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DF107E2BA07AFE00BD7F6F /* AVJ_MathUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		75DF106F2BA07AFE00BD7F6F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 75DF10552BA07AFC00BD7F6F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 75DF105C2BA07AFC00BD7F6F;
+			remoteInfo = "AVJ Math";
+		};
+		75DF10792BA07AFE00BD7F6F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 75DF10552BA07AFC00BD7F6F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 75DF105C2BA07AFC00BD7F6F;
+			remoteInfo = "AVJ Math";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		75DF105D2BA07AFC00BD7F6F /* AVJ Math.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AVJ Math.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		75DF10602BA07AFC00BD7F6F /* AVJ_MathApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AVJ_MathApp.swift; sourceTree = "<group>"; };
+		75DF10622BA07AFC00BD7F6F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		75DF10642BA07AFE00BD7F6F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		75DF10662BA07AFE00BD7F6F /* AVJ_Math.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AVJ_Math.entitlements; sourceTree = "<group>"; };
+		75DF10682BA07AFE00BD7F6F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		75DF106E2BA07AFE00BD7F6F /* AVJ MathTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "AVJ MathTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		75DF10722BA07AFE00BD7F6F /* AVJ_MathTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AVJ_MathTests.swift; sourceTree = "<group>"; };
+		75DF10782BA07AFE00BD7F6F /* AVJ MathUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "AVJ MathUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		75DF107C2BA07AFE00BD7F6F /* AVJ_MathUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AVJ_MathUITests.swift; sourceTree = "<group>"; };
+		75DF107E2BA07AFE00BD7F6F /* AVJ_MathUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AVJ_MathUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		75DF105A2BA07AFC00BD7F6F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		75DF106B2BA07AFE00BD7F6F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		75DF10752BA07AFE00BD7F6F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		75DF10542BA07AFC00BD7F6F = {
+			isa = PBXGroup;
+			children = (
+				75DF105F2BA07AFC00BD7F6F /* AVJ Math */,
+				75DF10712BA07AFE00BD7F6F /* AVJ MathTests */,
+				75DF107B2BA07AFE00BD7F6F /* AVJ MathUITests */,
+				75DF105E2BA07AFC00BD7F6F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		75DF105E2BA07AFC00BD7F6F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				75DF105D2BA07AFC00BD7F6F /* AVJ Math.app */,
+				75DF106E2BA07AFE00BD7F6F /* AVJ MathTests.xctest */,
+				75DF10782BA07AFE00BD7F6F /* AVJ MathUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		75DF105F2BA07AFC00BD7F6F /* AVJ Math */ = {
+			isa = PBXGroup;
+			children = (
+				75DF10602BA07AFC00BD7F6F /* AVJ_MathApp.swift */,
+				75DF10622BA07AFC00BD7F6F /* ContentView.swift */,
+				75DF10642BA07AFE00BD7F6F /* Assets.xcassets */,
+				75DF10662BA07AFE00BD7F6F /* AVJ_Math.entitlements */,
+				75DF10672BA07AFE00BD7F6F /* Preview Content */,
+			);
+			path = "AVJ Math";
+			sourceTree = "<group>";
+		};
+		75DF10672BA07AFE00BD7F6F /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				75DF10682BA07AFE00BD7F6F /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		75DF10712BA07AFE00BD7F6F /* AVJ MathTests */ = {
+			isa = PBXGroup;
+			children = (
+				75DF10722BA07AFE00BD7F6F /* AVJ_MathTests.swift */,
+			);
+			path = "AVJ MathTests";
+			sourceTree = "<group>";
+		};
+		75DF107B2BA07AFE00BD7F6F /* AVJ MathUITests */ = {
+			isa = PBXGroup;
+			children = (
+				75DF107C2BA07AFE00BD7F6F /* AVJ_MathUITests.swift */,
+				75DF107E2BA07AFE00BD7F6F /* AVJ_MathUITestsLaunchTests.swift */,
+			);
+			path = "AVJ MathUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		75DF105C2BA07AFC00BD7F6F /* AVJ Math */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 75DF10822BA07AFE00BD7F6F /* Build configuration list for PBXNativeTarget "AVJ Math" */;
+			buildPhases = (
+				75DF10592BA07AFC00BD7F6F /* Sources */,
+				75DF105A2BA07AFC00BD7F6F /* Frameworks */,
+				75DF105B2BA07AFC00BD7F6F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "AVJ Math";
+			productName = "AVJ Math";
+			productReference = 75DF105D2BA07AFC00BD7F6F /* AVJ Math.app */;
+			productType = "com.apple.product-type.application";
+		};
+		75DF106D2BA07AFE00BD7F6F /* AVJ MathTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 75DF10852BA07AFE00BD7F6F /* Build configuration list for PBXNativeTarget "AVJ MathTests" */;
+			buildPhases = (
+				75DF106A2BA07AFE00BD7F6F /* Sources */,
+				75DF106B2BA07AFE00BD7F6F /* Frameworks */,
+				75DF106C2BA07AFE00BD7F6F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				75DF10702BA07AFE00BD7F6F /* PBXTargetDependency */,
+			);
+			name = "AVJ MathTests";
+			productName = "AVJ MathTests";
+			productReference = 75DF106E2BA07AFE00BD7F6F /* AVJ MathTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		75DF10772BA07AFE00BD7F6F /* AVJ MathUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 75DF10882BA07AFE00BD7F6F /* Build configuration list for PBXNativeTarget "AVJ MathUITests" */;
+			buildPhases = (
+				75DF10742BA07AFE00BD7F6F /* Sources */,
+				75DF10752BA07AFE00BD7F6F /* Frameworks */,
+				75DF10762BA07AFE00BD7F6F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				75DF107A2BA07AFE00BD7F6F /* PBXTargetDependency */,
+			);
+			name = "AVJ MathUITests";
+			productName = "AVJ MathUITests";
+			productReference = 75DF10782BA07AFE00BD7F6F /* AVJ MathUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		75DF10552BA07AFC00BD7F6F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1530;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					75DF105C2BA07AFC00BD7F6F = {
+						CreatedOnToolsVersion = 15.3;
+					};
+					75DF106D2BA07AFE00BD7F6F = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = 75DF105C2BA07AFC00BD7F6F;
+					};
+					75DF10772BA07AFE00BD7F6F = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = 75DF105C2BA07AFC00BD7F6F;
+					};
+				};
+			};
+			buildConfigurationList = 75DF10582BA07AFC00BD7F6F /* Build configuration list for PBXProject "AVJ Math" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 75DF10542BA07AFC00BD7F6F;
+			productRefGroup = 75DF105E2BA07AFC00BD7F6F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				75DF105C2BA07AFC00BD7F6F /* AVJ Math */,
+				75DF106D2BA07AFE00BD7F6F /* AVJ MathTests */,
+				75DF10772BA07AFE00BD7F6F /* AVJ MathUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		75DF105B2BA07AFC00BD7F6F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75DF10692BA07AFE00BD7F6F /* Preview Assets.xcassets in Resources */,
+				75DF10652BA07AFE00BD7F6F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		75DF106C2BA07AFE00BD7F6F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		75DF10762BA07AFE00BD7F6F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		75DF10592BA07AFC00BD7F6F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75DF10632BA07AFC00BD7F6F /* ContentView.swift in Sources */,
+				75DF10612BA07AFC00BD7F6F /* AVJ_MathApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		75DF106A2BA07AFE00BD7F6F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75DF10732BA07AFE00BD7F6F /* AVJ_MathTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		75DF10742BA07AFE00BD7F6F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75DF107F2BA07AFE00BD7F6F /* AVJ_MathUITestsLaunchTests.swift in Sources */,
+				75DF107D2BA07AFE00BD7F6F /* AVJ_MathUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		75DF10702BA07AFE00BD7F6F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 75DF105C2BA07AFC00BD7F6F /* AVJ Math */;
+			targetProxy = 75DF106F2BA07AFE00BD7F6F /* PBXContainerItemProxy */;
+		};
+		75DF107A2BA07AFE00BD7F6F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 75DF105C2BA07AFC00BD7F6F /* AVJ Math */;
+			targetProxy = 75DF10792BA07AFE00BD7F6F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		75DF10802BA07AFE00BD7F6F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		75DF10812BA07AFE00BD7F6F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		75DF10832BA07AFE00BD7F6F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "AVJ Math/AVJ_Math.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"AVJ Math/Preview Content\"";
+				DEVELOPMENT_TEAM = 39M988G5YW;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 14.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "jonaswallmann.com.AVJ-Math";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		75DF10842BA07AFE00BD7F6F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "AVJ Math/AVJ_Math.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"AVJ Math/Preview Content\"";
+				DEVELOPMENT_TEAM = 39M988G5YW;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 14.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "jonaswallmann.com.AVJ-Math";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		75DF10862BA07AFE00BD7F6F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 39M988G5YW;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MACOSX_DEPLOYMENT_TARGET = 14.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "jonaswallmann.com.AVJ-MathTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AVJ Math.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/AVJ Math";
+			};
+			name = Debug;
+		};
+		75DF10872BA07AFE00BD7F6F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 39M988G5YW;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MACOSX_DEPLOYMENT_TARGET = 14.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "jonaswallmann.com.AVJ-MathTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AVJ Math.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/AVJ Math";
+			};
+			name = Release;
+		};
+		75DF10892BA07AFE00BD7F6F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 39M988G5YW;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MACOSX_DEPLOYMENT_TARGET = 14.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "jonaswallmann.com.AVJ-MathUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "AVJ Math";
+			};
+			name = Debug;
+		};
+		75DF108A2BA07AFE00BD7F6F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 39M988G5YW;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MACOSX_DEPLOYMENT_TARGET = 14.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "jonaswallmann.com.AVJ-MathUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "AVJ Math";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		75DF10582BA07AFC00BD7F6F /* Build configuration list for PBXProject "AVJ Math" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				75DF10802BA07AFE00BD7F6F /* Debug */,
+				75DF10812BA07AFE00BD7F6F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		75DF10822BA07AFE00BD7F6F /* Build configuration list for PBXNativeTarget "AVJ Math" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				75DF10832BA07AFE00BD7F6F /* Debug */,
+				75DF10842BA07AFE00BD7F6F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		75DF10852BA07AFE00BD7F6F /* Build configuration list for PBXNativeTarget "AVJ MathTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				75DF10862BA07AFE00BD7F6F /* Debug */,
+				75DF10872BA07AFE00BD7F6F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		75DF10882BA07AFE00BD7F6F /* Build configuration list for PBXNativeTarget "AVJ MathUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				75DF10892BA07AFE00BD7F6F /* Debug */,
+				75DF108A2BA07AFE00BD7F6F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 75DF10552BA07AFC00BD7F6F /* Project object */;
+}

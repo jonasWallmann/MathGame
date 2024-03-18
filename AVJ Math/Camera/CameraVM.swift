@@ -28,7 +28,7 @@ class CameraVM: NSObject {
         }
     }
 
-    func setNewFrameCallback(callback: @escaping (CGImage) -> Void) {
+    func newFrameCallback(_ callback: @escaping (CGImage) -> Void) {
         newFrameCallback = callback
     }
 
@@ -76,9 +76,12 @@ class CameraVM: NSObject {
     }
 
     private func getVideoDevice() -> AVCaptureDevice? {
+        #if os(macOS)
         if let main = AVCaptureDevice.default(for: .video) {
             return main
         }
+        #endif
+
         #if os(iOS)
         if let wide = AVCaptureDevice.default(.builtInWideAngleCamera, for: .video, position: .front) {
             return wide

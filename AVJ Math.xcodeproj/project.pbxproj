@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		751A76772BA0B2DE0026D14F /* CardCountVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 751A76762BA0B2DE0026D14F /* CardCountVM.swift */; };
+		751A76792BA0BB700026D14F /* CountVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 751A76782BA0BB700026D14F /* CountVM.swift */; };
+		751A767B2BA0BB770026D14F /* CountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 751A767A2BA0BB770026D14F /* CountView.swift */; };
 		75DF10612BA07AFC00BD7F6F /* AVJ_MathApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DF10602BA07AFC00BD7F6F /* AVJ_MathApp.swift */; };
 		75DF10632BA07AFC00BD7F6F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DF10622BA07AFC00BD7F6F /* ContentView.swift */; };
 		75DF10652BA07AFE00BD7F6F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75DF10642BA07AFE00BD7F6F /* Assets.xcassets */; };
@@ -17,7 +20,7 @@
 		75DF10902BA07B2800BD7F6F /* CameraStreamView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DF108D2BA07B2800BD7F6F /* CameraStreamView.swift */; };
 		75DF10912BA07B2800BD7F6F /* CameraVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DF108E2BA07B2800BD7F6F /* CameraVM.swift */; };
 		75DF10952BA07B2D00BD7F6F /* FingersOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DF10922BA07B2D00BD7F6F /* FingersOverlay.swift */; };
-		75DF10962BA07B2D00BD7F6F /* MathVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DF10932BA07B2D00BD7F6F /* MathVM.swift */; };
+		75DF10962BA07B2D00BD7F6F /* FingerCountVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DF10932BA07B2D00BD7F6F /* FingerCountVM.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +41,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		751A76762BA0B2DE0026D14F /* CardCountVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCountVM.swift; sourceTree = "<group>"; };
+		751A76782BA0BB700026D14F /* CountVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountVM.swift; sourceTree = "<group>"; };
+		751A767A2BA0BB770026D14F /* CountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountView.swift; sourceTree = "<group>"; };
 		75DF105D2BA07AFC00BD7F6F /* AVJ Math.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AVJ Math.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		75DF10602BA07AFC00BD7F6F /* AVJ_MathApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AVJ_MathApp.swift; sourceTree = "<group>"; };
 		75DF10622BA07AFC00BD7F6F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -52,7 +58,7 @@
 		75DF108D2BA07B2800BD7F6F /* CameraStreamView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraStreamView.swift; sourceTree = "<group>"; };
 		75DF108E2BA07B2800BD7F6F /* CameraVM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraVM.swift; sourceTree = "<group>"; };
 		75DF10922BA07B2D00BD7F6F /* FingersOverlay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FingersOverlay.swift; sourceTree = "<group>"; };
-		75DF10932BA07B2D00BD7F6F /* MathVM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MathVM.swift; sourceTree = "<group>"; };
+		75DF10932BA07B2D00BD7F6F /* FingerCountVM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FingerCountVM.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +86,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		751A76752BA0B2CD0026D14F /* Card */ = {
+			isa = PBXGroup;
+			children = (
+				751A76762BA0B2DE0026D14F /* CardCountVM.swift */,
+			);
+			path = Card;
+			sourceTree = "<group>";
+		};
 		75DF10542BA07AFC00BD7F6F = {
 			isa = PBXGroup;
 			children = (
@@ -103,12 +117,15 @@
 		75DF105F2BA07AFC00BD7F6F /* AVJ Math */ = {
 			isa = PBXGroup;
 			children = (
-				75DF10602BA07AFC00BD7F6F /* AVJ_MathApp.swift */,
-				75DF10622BA07AFC00BD7F6F /* ContentView.swift */,
 				75DF10642BA07AFE00BD7F6F /* Assets.xcassets */,
 				75DF10662BA07AFE00BD7F6F /* AVJ_Math.entitlements */,
+				75DF10602BA07AFC00BD7F6F /* AVJ_MathApp.swift */,
+				75DF10622BA07AFC00BD7F6F /* ContentView.swift */,
+				751A76782BA0BB700026D14F /* CountVM.swift */,
+				751A767A2BA0BB770026D14F /* CountView.swift */,
 				75DF108F2BA07B2800BD7F6F /* Camera */,
-				75DF10942BA07B2D00BD7F6F /* Math */,
+				75DF10942BA07B2D00BD7F6F /* Finger */,
+				751A76752BA0B2CD0026D14F /* Card */,
 				75DF10672BA07AFE00BD7F6F /* Preview Content */,
 			);
 			path = "AVJ Math";
@@ -148,13 +165,13 @@
 			path = Camera;
 			sourceTree = "<group>";
 		};
-		75DF10942BA07B2D00BD7F6F /* Math */ = {
+		75DF10942BA07B2D00BD7F6F /* Finger */ = {
 			isa = PBXGroup;
 			children = (
+				75DF10932BA07B2D00BD7F6F /* FingerCountVM.swift */,
 				75DF10922BA07B2D00BD7F6F /* FingersOverlay.swift */,
-				75DF10932BA07B2D00BD7F6F /* MathVM.swift */,
 			);
-			path = Math;
+			path = Finger;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -287,12 +304,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				751A76772BA0B2DE0026D14F /* CardCountVM.swift in Sources */,
 				75DF10902BA07B2800BD7F6F /* CameraStreamView.swift in Sources */,
 				75DF10952BA07B2D00BD7F6F /* FingersOverlay.swift in Sources */,
-				75DF10962BA07B2D00BD7F6F /* MathVM.swift in Sources */,
+				75DF10962BA07B2D00BD7F6F /* FingerCountVM.swift in Sources */,
+				751A76792BA0BB700026D14F /* CountVM.swift in Sources */,
 				75DF10912BA07B2800BD7F6F /* CameraVM.swift in Sources */,
 				75DF10632BA07AFC00BD7F6F /* ContentView.swift in Sources */,
 				75DF10612BA07AFC00BD7F6F /* AVJ_MathApp.swift in Sources */,
+				751A767B2BA0BB770026D14F /* CountView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -454,8 +474,10 @@
 				DEVELOPMENT_ASSET_PATHS = "\"AVJ Math/Preview Content\"";
 				DEVELOPMENT_TEAM = 39M988G5YW;
 				ENABLE_HARDENED_RUNTIME = YES;
+				"ENABLE_HARDENED_RUNTIME[sdk=macosx*]" = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "We need the camera to count your fingers";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -466,7 +488,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.3;
@@ -492,8 +514,10 @@
 				DEVELOPMENT_ASSET_PATHS = "\"AVJ Math/Preview Content\"";
 				DEVELOPMENT_TEAM = 39M988G5YW;
 				ENABLE_HARDENED_RUNTIME = YES;
+				"ENABLE_HARDENED_RUNTIME[sdk=macosx*]" = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "We need the camera to count your fingers";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -504,7 +528,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.3;

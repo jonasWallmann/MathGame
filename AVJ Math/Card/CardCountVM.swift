@@ -12,6 +12,10 @@ class CardCountVM {
     public var count = 0
     public var frameCount = 0
 
+    public var cardsShown: Bool {
+        count != 0
+    }
+
     public func newFrame(_ frame: CGImage) {
         frameCount += 1
         if frameCount % 5 == 0 { return }

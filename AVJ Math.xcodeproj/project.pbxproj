@@ -10,6 +10,7 @@
 		751A76772BA0B2DE0026D14F /* CardCountVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 751A76762BA0B2DE0026D14F /* CardCountVM.swift */; };
 		751A76792BA0BB700026D14F /* CountVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 751A76782BA0BB700026D14F /* CountVM.swift */; };
 		751A767B2BA0BB770026D14F /* CountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 751A767A2BA0BB770026D14F /* CountView.swift */; };
+		75D6A1C02BAA125A004088B8 /* GameVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D6A1BF2BAA125A004088B8 /* GameVM.swift */; };
 		75DF10612BA07AFC00BD7F6F /* AVJ_MathApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DF10602BA07AFC00BD7F6F /* AVJ_MathApp.swift */; };
 		75DF10632BA07AFC00BD7F6F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DF10622BA07AFC00BD7F6F /* ContentView.swift */; };
 		75DF10652BA07AFE00BD7F6F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75DF10642BA07AFE00BD7F6F /* Assets.xcassets */; };
@@ -44,6 +45,7 @@
 		751A76762BA0B2DE0026D14F /* CardCountVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCountVM.swift; sourceTree = "<group>"; };
 		751A76782BA0BB700026D14F /* CountVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountVM.swift; sourceTree = "<group>"; };
 		751A767A2BA0BB770026D14F /* CountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountView.swift; sourceTree = "<group>"; };
+		75D6A1BF2BAA125A004088B8 /* GameVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameVM.swift; sourceTree = "<group>"; };
 		75DF105D2BA07AFC00BD7F6F /* AVJ Math.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AVJ Math.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		75DF10602BA07AFC00BD7F6F /* AVJ_MathApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AVJ_MathApp.swift; sourceTree = "<group>"; };
 		75DF10622BA07AFC00BD7F6F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -94,6 +96,15 @@
 			path = Card;
 			sourceTree = "<group>";
 		};
+		75D6A1C12BAA131C004088B8 /* Counting */ = {
+			isa = PBXGroup;
+			children = (
+				751A76782BA0BB700026D14F /* CountVM.swift */,
+				751A767A2BA0BB770026D14F /* CountView.swift */,
+			);
+			path = Counting;
+			sourceTree = "<group>";
+		};
 		75DF10542BA07AFC00BD7F6F = {
 			isa = PBXGroup;
 			children = (
@@ -121,8 +132,8 @@
 				75DF10662BA07AFE00BD7F6F /* AVJ_Math.entitlements */,
 				75DF10602BA07AFC00BD7F6F /* AVJ_MathApp.swift */,
 				75DF10622BA07AFC00BD7F6F /* ContentView.swift */,
-				751A76782BA0BB700026D14F /* CountVM.swift */,
-				751A767A2BA0BB770026D14F /* CountView.swift */,
+				75D6A1BF2BAA125A004088B8 /* GameVM.swift */,
+				75D6A1C12BAA131C004088B8 /* Counting */,
 				75DF108F2BA07B2800BD7F6F /* Camera */,
 				75DF10942BA07B2D00BD7F6F /* Finger */,
 				751A76752BA0B2CD0026D14F /* Card */,
@@ -312,6 +323,7 @@
 				75DF10912BA07B2800BD7F6F /* CameraVM.swift in Sources */,
 				75DF10632BA07AFC00BD7F6F /* ContentView.swift in Sources */,
 				75DF10612BA07AFC00BD7F6F /* AVJ_MathApp.swift in Sources */,
+				75D6A1C02BAA125A004088B8 /* GameVM.swift in Sources */,
 				751A767B2BA0BB770026D14F /* CountView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

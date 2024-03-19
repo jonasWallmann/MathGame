@@ -8,11 +8,28 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var gameVM = GameVM()
+
+    @State private var fingerVM = FingerCountVM()
+    @State private var cardVM = CardCountVM()
+
     var body: some View {
-        CountView()
+        Text("Show \(gameVM.searchedNumber.description)")
+
+        Text(gameVM.correctAnswer ? "Correct" : "False")
+
+        CountView(
+            vm: CountVM(newCountCallback: gameVM.newFingerCount),
+            fingerVM: fingerVM,
+            cardVM: cardVM
+        )
+        .overlay {
+            FingersOverlay(handPoints: fingerVM.points.filter { $0.isCounted })
+        }
+        .flipped(.horizontal)
     }
 }
 
-#Preview {
+#Preview(traits: .fixedLayout(width: 1000, height: 700)) {
     ContentView()
 }

@@ -46,7 +46,7 @@ class FingerCountVM {
                 // thumb
                 let wrist = try observation.recognizedPoint(.wrist)
                 let thumbCMC = try observation.recognizedPoint(.thumbCMC)
-                let unit = thumbCMC.distance(wrist) * 0.2
+                let unit = thumbCMC.distance(wrist) * 0.3
 
                 let thumbMP = try observation.recognizedPoint(.thumbMP)
                 let thumbTip = try observation.recognizedPoint(.thumbTip)

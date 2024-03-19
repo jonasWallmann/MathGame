@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-let arcRadius: CGFloat = 10
+let arcRadius: CGFloat = 20
 
 struct FingersOverlay: Shape {
     let handPoints: [FingerPoint]

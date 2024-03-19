@@ -20,7 +20,7 @@ struct FingersOverlay: Shape {
             let arcPoint = arcPoint(screenPoint: screenPoint)
 
             path.move(to: arcPoint)
-            path.addArc(center: screenPoint, radius: arcRadius, startAngle: .degrees(0), endAngle: .degrees(360), clockwise: true)
+//            path.addArc(center: screenPoint, radius: arcRadius, startAngle: .degrees(0), endAngle: .degrees(360), clockwise: true)
         }
         return path
     }

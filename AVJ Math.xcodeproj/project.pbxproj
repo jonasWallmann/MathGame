@@ -10,9 +10,14 @@
 		751A76772BA0B2DE0026D14F /* CardCountVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 751A76762BA0B2DE0026D14F /* CardCountVM.swift */; };
 		751A76792BA0BB700026D14F /* CountVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 751A76782BA0BB700026D14F /* CountVM.swift */; };
 		751A767B2BA0BB770026D14F /* CountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 751A767A2BA0BB770026D14F /* CountView.swift */; };
+		7583FC632BAA34F600892851 /* flowernew.riv in Resources */ = {isa = PBXBuildFile; fileRef = 7583FC622BAA34F600892851 /* flowernew.riv */; };
+		7583FC642BAA34F600892851 /* flowernew.riv in Resources */ = {isa = PBXBuildFile; fileRef = 7583FC622BAA34F600892851 /* flowernew.riv */; };
+		7583FC652BAA34F600892851 /* flowernew.riv in Resources */ = {isa = PBXBuildFile; fileRef = 7583FC622BAA34F600892851 /* flowernew.riv */; };
 		75D6A1C02BAA125A004088B8 /* GameVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D6A1BF2BAA125A004088B8 /* GameVM.swift */; };
+		75D6A1FD2BAA2232004088B8 /* RiveRuntime in Frameworks */ = {isa = PBXBuildFile; productRef = 75D6A1FC2BAA2232004088B8 /* RiveRuntime */; };
+		75D6A2002BAA227D004088B8 /* FlowerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D6A1FF2BAA227D004088B8 /* FlowerView.swift */; };
 		75DF10612BA07AFC00BD7F6F /* AVJ_MathApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DF10602BA07AFC00BD7F6F /* AVJ_MathApp.swift */; };
-		75DF10632BA07AFC00BD7F6F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DF10622BA07AFC00BD7F6F /* ContentView.swift */; };
+		75DF10632BA07AFC00BD7F6F /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DF10622BA07AFC00BD7F6F /* GameView.swift */; };
 		75DF10652BA07AFE00BD7F6F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75DF10642BA07AFE00BD7F6F /* Assets.xcassets */; };
 		75DF10692BA07AFE00BD7F6F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75DF10682BA07AFE00BD7F6F /* Preview Assets.xcassets */; };
 		75DF10732BA07AFE00BD7F6F /* AVJ_MathTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DF10722BA07AFE00BD7F6F /* AVJ_MathTests.swift */; };
@@ -45,10 +50,12 @@
 		751A76762BA0B2DE0026D14F /* CardCountVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCountVM.swift; sourceTree = "<group>"; };
 		751A76782BA0BB700026D14F /* CountVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountVM.swift; sourceTree = "<group>"; };
 		751A767A2BA0BB770026D14F /* CountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountView.swift; sourceTree = "<group>"; };
+		7583FC622BAA34F600892851 /* flowernew.riv */ = {isa = PBXFileReference; lastKnownFileType = file; path = flowernew.riv; sourceTree = "<group>"; };
 		75D6A1BF2BAA125A004088B8 /* GameVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameVM.swift; sourceTree = "<group>"; };
+		75D6A1FF2BAA227D004088B8 /* FlowerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowerView.swift; sourceTree = "<group>"; };
 		75DF105D2BA07AFC00BD7F6F /* AVJ Math.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AVJ Math.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		75DF10602BA07AFC00BD7F6F /* AVJ_MathApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AVJ_MathApp.swift; sourceTree = "<group>"; };
-		75DF10622BA07AFC00BD7F6F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		75DF10622BA07AFC00BD7F6F /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
 		75DF10642BA07AFE00BD7F6F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		75DF10662BA07AFE00BD7F6F /* AVJ_Math.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AVJ_Math.entitlements; sourceTree = "<group>"; };
 		75DF10682BA07AFE00BD7F6F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -68,6 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75D6A1FD2BAA2232004088B8 /* RiveRuntime in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,6 +102,15 @@
 				751A76762BA0B2DE0026D14F /* CardCountVM.swift */,
 			);
 			path = Card;
+			sourceTree = "<group>";
+		};
+		7583FC662BAA48D400892851 /* Flower */ = {
+			isa = PBXGroup;
+			children = (
+				7583FC622BAA34F600892851 /* flowernew.riv */,
+				75D6A1FF2BAA227D004088B8 /* FlowerView.swift */,
+			);
+			path = Flower;
 			sourceTree = "<group>";
 		};
 		75D6A1C12BAA131C004088B8 /* Counting */ = {
@@ -131,12 +148,13 @@
 				75DF10642BA07AFE00BD7F6F /* Assets.xcassets */,
 				75DF10662BA07AFE00BD7F6F /* AVJ_Math.entitlements */,
 				75DF10602BA07AFC00BD7F6F /* AVJ_MathApp.swift */,
-				75DF10622BA07AFC00BD7F6F /* ContentView.swift */,
 				75D6A1BF2BAA125A004088B8 /* GameVM.swift */,
+				75DF10622BA07AFC00BD7F6F /* GameView.swift */,
 				75D6A1C12BAA131C004088B8 /* Counting */,
 				75DF108F2BA07B2800BD7F6F /* Camera */,
 				75DF10942BA07B2D00BD7F6F /* Finger */,
 				751A76752BA0B2CD0026D14F /* Card */,
+				7583FC662BAA48D400892851 /* Flower */,
 				75DF10672BA07AFE00BD7F6F /* Preview Content */,
 			);
 			path = "AVJ Math";
@@ -201,6 +219,9 @@
 			dependencies = (
 			);
 			name = "AVJ Math";
+			packageProductDependencies = (
+				75D6A1FC2BAA2232004088B8 /* RiveRuntime */,
+			);
 			productName = "AVJ Math";
 			productReference = 75DF105D2BA07AFC00BD7F6F /* AVJ Math.app */;
 			productType = "com.apple.product-type.application";
@@ -273,6 +294,9 @@
 				Base,
 			);
 			mainGroup = 75DF10542BA07AFC00BD7F6F;
+			packageReferences = (
+				75D6A1FB2BAA2232004088B8 /* XCRemoteSwiftPackageReference "rive-ios" */,
+			);
 			productRefGroup = 75DF105E2BA07AFC00BD7F6F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -291,6 +315,7 @@
 			files = (
 				75DF10692BA07AFE00BD7F6F /* Preview Assets.xcassets in Resources */,
 				75DF10652BA07AFE00BD7F6F /* Assets.xcassets in Resources */,
+				7583FC632BAA34F600892851 /* flowernew.riv in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -298,6 +323,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7583FC642BAA34F600892851 /* flowernew.riv in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -305,6 +331,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7583FC652BAA34F600892851 /* flowernew.riv in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -321,8 +348,9 @@
 				75DF10962BA07B2D00BD7F6F /* FingerCountVM.swift in Sources */,
 				751A76792BA0BB700026D14F /* CountVM.swift in Sources */,
 				75DF10912BA07B2800BD7F6F /* CameraVM.swift in Sources */,
-				75DF10632BA07AFC00BD7F6F /* ContentView.swift in Sources */,
+				75DF10632BA07AFC00BD7F6F /* GameView.swift in Sources */,
 				75DF10612BA07AFC00BD7F6F /* AVJ_MathApp.swift in Sources */,
+				75D6A2002BAA227D004088B8 /* FlowerView.swift in Sources */,
 				75D6A1C02BAA125A004088B8 /* GameVM.swift in Sources */,
 				751A767B2BA0BB770026D14F /* CountView.swift in Sources */,
 			);
@@ -685,6 +713,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		75D6A1FB2BAA2232004088B8 /* XCRemoteSwiftPackageReference "rive-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/rive-app/rive-ios.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.9.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		75D6A1FC2BAA2232004088B8 /* RiveRuntime */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 75D6A1FB2BAA2232004088B8 /* XCRemoteSwiftPackageReference "rive-ios" */;
+			productName = RiveRuntime;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 75DF10552BA07AFC00BD7F6F /* Project object */;
 }

@@ -9,9 +9,10 @@ import Foundation
 
 @Observable
 class GameVM {
-    private(set) var searchedNumber: Int = 0
+    private(set) var searchedNumber = 0
 
-    private(set) var correctAnswer: Bool = false
+    private(set) var correctAnswer = false
+    private(set) var correctAnswerCount = 0
 
     init() {
         newSearchNumber()
@@ -20,9 +21,10 @@ class GameVM {
     func newFingerCount(_ count: Int) {
         if count == searchedNumber {
             correctAnswer = true
-            newSearchNumber()
+            correctAnswerCount += 1
 
             DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+                self.newSearchNumber()
                 self.correctAnswer = false
             }
         }

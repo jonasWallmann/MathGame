@@ -18,7 +18,7 @@ class CardCountVM {
 
     public func newFrame(_ frame: CGImage) {
         frameCount += 1
-        if frameCount % 5 == 0 { return }
+        if frameCount % 10 == 0 { return }
 
 //        DispatchQueue.global(qos: .utility) {
             self.analyse(frame: frame)

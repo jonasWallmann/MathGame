@@ -39,7 +39,7 @@ struct CountView: View {
 
     private func newFrame(frame: CGImage) {
         fingerVM.newFrame(frame)
-        cardVM.newFrame(frame)
+//        cardVM.newFrame(frame)
         vm.newCount(fingers: fingerVM.count, cards: cardVM.count)
     }
 

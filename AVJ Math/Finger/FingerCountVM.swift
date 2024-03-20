@@ -16,16 +16,13 @@ class FingerCountVM {
 
     public func newFrame(_ frame: CGImage) {
         frameCount += 1
-        if frameCount % 5 == 0  { return }
+        if frameCount % 10 == 0 { return }
+        frameCount = 0
 
-//        DispatchQueue.global(qos: .default).async {
-            let analytics = self.analyse(frame: frame)
+        let analytics = analyse(frame: frame)
 
-//            DispatchQueue.main.async {
-                self.count = analytics.fingerCount
-                self.points = analytics.points
-//            }
-//        }
+        count = analytics.fingerCount
+        points = analytics.points
     }
 
     private func analyse(frame: CGImage) -> (fingerCount: Int, points: [FingerPoint]) {

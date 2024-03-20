@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-let arcRadius: CGFloat = 20
+let arcRadius: CGFloat = 12
 
 struct FingersOverlay: Shape {
     let handPoints: [FingerPoint]
@@ -37,10 +37,10 @@ struct FingersOverlay: Shape {
 #Preview {
     Group {
         FingersOverlay(handPoints: [
-            FingerPoint(isCounted: true, point: CGPoint(x: 0.9, y: 0.5)),
-            FingerPoint(isCounted: true, point: CGPoint(x: 0.5, y: 0.1)),
-            FingerPoint(isCounted: false, point: CGPoint(x: 0.2, y: 0.2)),
-            FingerPoint(isCounted: false, point: CGPoint(x: 0.2, y: 0.8)),
+            FingerPoint(id: 0, isCounted: true, point: CGPoint(x: 0.9, y: 0.5)),
+            FingerPoint(id: 1, isCounted: true, point: CGPoint(x: 0.5, y: 0.1)),
+            FingerPoint(id: 2, isCounted: false, point: CGPoint(x: 0.2, y: 0.2)),
+            FingerPoint(id: 3, isCounted: false, point: CGPoint(x: 0.2, y: 0.8)),
         ])
     }
 }

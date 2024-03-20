@@ -14,18 +14,7 @@ struct GameView: View {
     @State private var cardVM = CardCountVM()
 
     var body: some View {
-        VStack(spacing: 0) {
-            HStack {
-                Spacer()
-                Text(gameVM.searchedNumber.description)
-                    .font(.largeTitle)
-
-                Spacer()
-                Text("\(gameVM.correctAnswerCount) ✅")
-            }
-                .padding()
-                .background(gameVM.correctAnswer ? .green.opacity(0.3) : .black.opacity(0.8))
-
+        ZStack {
             GeometryReader { geo in
                 ZStack {
                     CountView(
@@ -34,35 +23,39 @@ struct GameView: View {
                         cardVM: cardVM
                     )
 
-//                    FingersOverlay(handPoints: fingerVM.points.filter { $0.isCounted })
-//                        .foregroundStyle(.indigo)
-
-                    FingerFlower(index: 0, isOpen: gameVM.correctAnswer, fingers: fingerVM.points, geo: geo)
-                    FingerFlower(index: 1, isOpen: gameVM.correctAnswer, fingers: fingerVM.points, geo: geo)
-                    FingerFlower(index: 2, isOpen: gameVM.correctAnswer, fingers: fingerVM.points, geo: geo)
-                    FingerFlower(index: 3, isOpen: gameVM.correctAnswer, fingers: fingerVM.points, geo: geo)
-                    FingerFlower(index: 4, isOpen: gameVM.correctAnswer, fingers: fingerVM.points, geo: geo)
-
-                    FingerFlower(index: 5, isOpen: gameVM.correctAnswer, fingers: fingerVM.points, geo: geo)
-                    FingerFlower(index: 6, isOpen: gameVM.correctAnswer, fingers: fingerVM.points, geo: geo)
-                    FingerFlower(index: 7, isOpen: gameVM.correctAnswer, fingers: fingerVM.points, geo: geo)
-                    FingerFlower(index: 8, isOpen: gameVM.correctAnswer, fingers: fingerVM.points, geo: geo)
-                    FingerFlower(index: 9, isOpen: gameVM.correctAnswer, fingers: fingerVM.points, geo: geo)
-
-                    FingerFlower(index: 10, isOpen: gameVM.correctAnswer, fingers: fingerVM.points, geo: geo)
-                    FingerFlower(index: 11, isOpen: gameVM.correctAnswer, fingers: fingerVM.points, geo: geo)
-                    FingerFlower(index: 12, isOpen: gameVM.correctAnswer, fingers: fingerVM.points, geo: geo)
-                    FingerFlower(index: 13, isOpen: gameVM.correctAnswer, fingers: fingerVM.points, geo: geo)
-                    FingerFlower(index: 14, isOpen: gameVM.correctAnswer, fingers: fingerVM.points, geo: geo)
-
-                    FingerFlower(index: 15, isOpen: gameVM.correctAnswer, fingers: fingerVM.points, geo: geo)
-                    FingerFlower(index: 16, isOpen: gameVM.correctAnswer, fingers: fingerVM.points, geo: geo)
-                    FingerFlower(index: 17, isOpen: gameVM.correctAnswer, fingers: fingerVM.points, geo: geo)
-                    FingerFlower(index: 18, isOpen: gameVM.correctAnswer, fingers: fingerVM.points, geo: geo)
-                    FingerFlower(index: 19, isOpen: gameVM.correctAnswer, fingers: fingerVM.points, geo: geo)
+                    ForEach(fingerVM.points, id: \.id) { finger in
+                        if finger.isCounted {
+                            FlowerView(isOpen: gameVM.correctAnswer, color: "violet")
+                                .position(
+                                    x: finger.point.x * geo.size.width,
+                                    y: finger.point.y * geo.size.height
+                                )
+                        }
+                    }
                 }
                 .flipped(.horizontal)
             }
+
+            // top bar
+            HStack {
+                Spacer()
+                Text(gameVM.searchedNumber.description)
+                    .font(.largeTitle)
+                Spacer()
+            }
+            .frame(height: 60)
+            .background(.thinMaterial)
+            .frame(maxHeight: .infinity, alignment: .top)
+
+            // bottom bar
+            HStack {
+                Spacer()
+                Text("\(gameVM.correctAnswerCount) ✅")
+                    .padding(.trailing, 20)
+            }
+            .frame(height: 100)
+            .background(.brown)
+            .frame(maxHeight: .infinity, alignment: .bottom)
         }
         .toolbar {
             Picker("Game mode", selection: $gameVM.mode) {
@@ -72,40 +65,12 @@ struct GameView: View {
             }
             .pickerStyle(.segmented)
         }
+        .onAppear(perform: gameVM.retrieveCount)
+        .onDisappear(perform: gameVM.saveCount)
     }
 }
 
-struct FingerFlower: View {
-    let index: Int
-    let isOpen: Bool
 
-    let fingers: [FingerPoint]
-    let geo: GeometryProxy
-
-    var point: CGPoint? {
-        if fingers.count > index {
-            let finger = fingers[index]
-
-            if finger.isCounted {
-                return finger.point
-            }
-        }
-        return nil
-    }
-
-    var body: some View {
-        if let point = point {
-            FlowerView(isOpen: isOpen, color: "violet")
-                .position(
-                    x: point.x * geo.size.width,
-                    y: point.y * geo.size.height
-                )
-        } else {
-            EmptyView()
-        }
-    }
-}
-
-#Preview(traits: .fixedLayout(width: 1000, height: 700)) {
+#Preview(traits: .fixedLayout(width: 500, height: 350)) {
     GameView()
 }

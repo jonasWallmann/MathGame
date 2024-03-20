@@ -42,7 +42,7 @@ class FingerCountVM {
 
             guard let results = request.results else { return (0, []) }
 
-            for observation in results {
+            for (index, observation) in results.enumerated() {
                 // thumb
                 let wrist = try observation.recognizedPoint(.wrist)
                 let thumbCMC = try observation.recognizedPoint(.thumbCMC)
@@ -79,11 +79,13 @@ class FingerCountVM {
 
                 fingerCount += (thumbUp ? 1 : 0) + (indexUp ? 1 : 0) + (middleUp ? 1 : 0) + (ringUp ? 1 : 0) + (littleUp ? 1 : 0)
 
-                points.append(FingerPoint(isCounted: thumbUp, point: thumbTip))
-                points.append(FingerPoint(isCounted: indexUp, point: indexTip))
-                points.append(FingerPoint(isCounted: middleUp, point: middleTip))
-                points.append(FingerPoint(isCounted: ringUp, point: ringTip))
-                points.append(FingerPoint(isCounted: littleUp, point: littleTip))
+                let base = index * 5
+
+                points.append(FingerPoint(id: base + 0, isCounted: thumbUp, point: thumbTip))
+                points.append(FingerPoint(id: base + 1, isCounted: indexUp, point: indexTip))
+                points.append(FingerPoint(id: base + 2, isCounted: middleUp, point: middleTip))
+                points.append(FingerPoint(id: base + 3, isCounted: ringUp, point: ringTip))
+                points.append(FingerPoint(id: base + 4, isCounted: littleUp, point: littleTip))
             }
 
             return (fingerCount, points)
@@ -96,17 +98,19 @@ class FingerCountVM {
 }
 
 struct FingerPoint: Identifiable {
-    let id = UUID()
+    let id: Int
 
     let isCounted: Bool
     let point: CGPoint
 
-    init(isCounted: Bool, point: CGPoint) {
+    init(id: Int, isCounted: Bool, point: CGPoint) {
+        self.id = id
         self.isCounted = isCounted
         self.point = point
     }
 
-    init(isCounted: Bool, point: VNRecognizedPoint) {
+    init(id: Int, isCounted: Bool, point: VNRecognizedPoint) {
+        self.id = id
         self.isCounted = isCounted
         self.point = CGPoint(x: point.x, y: abs(1 - point.y))
     }

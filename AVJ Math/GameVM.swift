@@ -17,27 +17,32 @@ class GameVM {
     public var mode: GameMode = .toFive
 
     private(set) var searchedNumber = 0
+    private(set) var searchedNumberInFramesCount = 0
 
     private(set) var correctAnswer = false
     private(set) var correctAnswerCount = 0
 
     init() {
         newSearchNumber()
+        correctAnswerCount = UserDefaults.standard.integer(forKey: "CORRECT_ANSWER_COUNT_KEY")
     }
 
     func newFingerCount(_ count: Int) {
         if correctAnswer { return }
 
-        withAnimation {
-            if count == searchedNumber {
-                correctAnswer = true
-                correctAnswerCount += 1
+        if count == searchedNumber {
+            searchedNumberInFramesCount += 1
 
-                self.newSearchNumber()
+            if searchedNumberInFramesCount < 4 { return }
 
-                DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
-                    self.correctAnswer = false
-                }
+            searchedNumberInFramesCount = 0
+            correctAnswer = true
+            correctAnswerCount += 1
+
+            newSearchNumber()
+
+            DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+                self.correctAnswer = false
             }
         }
     }
@@ -55,5 +60,13 @@ class GameVM {
         if currentNumber == searchedNumber {
             newSearchNumber()
         }
+    }
+
+    public func saveCount() {
+        UserDefaults.standard.set(correctAnswerCount, forKey: "CORRECT_ANSWER_COUNT_KEY")
+    }
+
+    public func retrieveCount() {
+        correctAnswerCount = UserDefaults.standard.integer(forKey: "CORRECT_ANSWER_COUNT_KEY")
     }
 }

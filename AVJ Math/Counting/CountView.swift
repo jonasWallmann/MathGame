@@ -17,7 +17,6 @@ struct CountView: View {
 
     var body: some View {
         CameraStreamView(cameraVM: cameraVM)
-            .frame(maxWidth: .infinity)
 //            .overlay {
 //                if cardVM.cardsShown == false {
 //                    FingersOverlay(handPoints: fingerVM.points.filter { $0.isCounted })

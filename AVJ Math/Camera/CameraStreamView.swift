@@ -15,10 +15,10 @@ struct CameraStreamView: View {
         if let cgImage = cameraVM.currentFrame {
             Image(cgImage, scale: 1, label: Text("Camera"))
                 .resizable()
-                .scaledToFill()
+                .scaledToFit()
         } else {
             ProgressView()
-                .frame(maxHeight: .infinity)
+                .frame(maxWidth: .infinity, maxHeight: .infinity)
         }
     }
 }

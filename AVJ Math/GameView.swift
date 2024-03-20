@@ -14,41 +14,63 @@ struct GameView: View {
     @State private var cardVM = CardCountVM()
 
     var body: some View {
-        Text("Show \(gameVM.searchedNumber.description)")
+        VStack(spacing: 0) {
+            HStack {
+                Spacer()
+                Text(gameVM.searchedNumber.description)
+                    .font(.largeTitle)
 
-        GeometryReader { geo in
-            ZStack {
-                CountView(
-                    vm: CountVM(newCountCallback: gameVM.newFingerCount),
-                    fingerVM: fingerVM,
-                    cardVM: cardVM
-                )
-
-                FingerFlower(index: 0, isOpen: gameVM.correctAnswer, fingers: fingerVM.points, geo: geo)
-                FingerFlower(index: 1, isOpen: gameVM.correctAnswer, fingers: fingerVM.points, geo: geo)
-                FingerFlower(index: 2, isOpen: gameVM.correctAnswer, fingers: fingerVM.points, geo: geo)
-                FingerFlower(index: 3, isOpen: gameVM.correctAnswer, fingers: fingerVM.points, geo: geo)
-                FingerFlower(index: 4, isOpen: gameVM.correctAnswer, fingers: fingerVM.points, geo: geo)
-
-                FingerFlower(index: 5, isOpen: gameVM.correctAnswer, fingers: fingerVM.points, geo: geo)
-                FingerFlower(index: 6, isOpen: gameVM.correctAnswer, fingers: fingerVM.points, geo: geo)
-                FingerFlower(index: 7, isOpen: gameVM.correctAnswer, fingers: fingerVM.points, geo: geo)
-                FingerFlower(index: 8, isOpen: gameVM.correctAnswer, fingers: fingerVM.points, geo: geo)
-                FingerFlower(index: 9, isOpen: gameVM.correctAnswer, fingers: fingerVM.points, geo: geo)
-
-                FingerFlower(index: 10, isOpen: true, fingers: fingerVM.points, geo: geo)
-                FingerFlower(index: 11, isOpen: true, fingers: fingerVM.points, geo: geo)
-                FingerFlower(index: 12, isOpen: true, fingers: fingerVM.points, geo: geo)
-                FingerFlower(index: 13, isOpen: true, fingers: fingerVM.points, geo: geo)
-                FingerFlower(index: 14, isOpen: true, fingers: fingerVM.points, geo: geo)
-
-                FingerFlower(index: 15, isOpen: true, fingers: fingerVM.points, geo: geo)
-                FingerFlower(index: 16, isOpen: true, fingers: fingerVM.points, geo: geo)
-                FingerFlower(index: 17, isOpen: true, fingers: fingerVM.points, geo: geo)
-                FingerFlower(index: 18, isOpen: true, fingers: fingerVM.points, geo: geo)
-                FingerFlower(index: 19, isOpen: true, fingers: fingerVM.points, geo: geo)
+                Spacer()
+                Text("\(gameVM.correctAnswerCount) ✅")
             }
-            .flipped(.horizontal)
+                .padding()
+                .background(gameVM.correctAnswer ? .green.opacity(0.3) : .black.opacity(0.8))
+
+            GeometryReader { geo in
+                ZStack {
+                    CountView(
+                        vm: CountVM(newCountCallback: gameVM.newFingerCount),
+                        fingerVM: fingerVM,
+                        cardVM: cardVM
+                    )
+
+//                    FingersOverlay(handPoints: fingerVM.points.filter { $0.isCounted })
+//                        .foregroundStyle(.indigo)
+
+                    FingerFlower(index: 0, isOpen: gameVM.correctAnswer, fingers: fingerVM.points, geo: geo)
+                    FingerFlower(index: 1, isOpen: gameVM.correctAnswer, fingers: fingerVM.points, geo: geo)
+                    FingerFlower(index: 2, isOpen: gameVM.correctAnswer, fingers: fingerVM.points, geo: geo)
+                    FingerFlower(index: 3, isOpen: gameVM.correctAnswer, fingers: fingerVM.points, geo: geo)
+                    FingerFlower(index: 4, isOpen: gameVM.correctAnswer, fingers: fingerVM.points, geo: geo)
+
+                    FingerFlower(index: 5, isOpen: gameVM.correctAnswer, fingers: fingerVM.points, geo: geo)
+                    FingerFlower(index: 6, isOpen: gameVM.correctAnswer, fingers: fingerVM.points, geo: geo)
+                    FingerFlower(index: 7, isOpen: gameVM.correctAnswer, fingers: fingerVM.points, geo: geo)
+                    FingerFlower(index: 8, isOpen: gameVM.correctAnswer, fingers: fingerVM.points, geo: geo)
+                    FingerFlower(index: 9, isOpen: gameVM.correctAnswer, fingers: fingerVM.points, geo: geo)
+
+                    FingerFlower(index: 10, isOpen: gameVM.correctAnswer, fingers: fingerVM.points, geo: geo)
+                    FingerFlower(index: 11, isOpen: gameVM.correctAnswer, fingers: fingerVM.points, geo: geo)
+                    FingerFlower(index: 12, isOpen: gameVM.correctAnswer, fingers: fingerVM.points, geo: geo)
+                    FingerFlower(index: 13, isOpen: gameVM.correctAnswer, fingers: fingerVM.points, geo: geo)
+                    FingerFlower(index: 14, isOpen: gameVM.correctAnswer, fingers: fingerVM.points, geo: geo)
+
+                    FingerFlower(index: 15, isOpen: gameVM.correctAnswer, fingers: fingerVM.points, geo: geo)
+                    FingerFlower(index: 16, isOpen: gameVM.correctAnswer, fingers: fingerVM.points, geo: geo)
+                    FingerFlower(index: 17, isOpen: gameVM.correctAnswer, fingers: fingerVM.points, geo: geo)
+                    FingerFlower(index: 18, isOpen: gameVM.correctAnswer, fingers: fingerVM.points, geo: geo)
+                    FingerFlower(index: 19, isOpen: gameVM.correctAnswer, fingers: fingerVM.points, geo: geo)
+                }
+                .flipped(.horizontal)
+            }
+        }
+        .toolbar {
+            Picker("Game mode", selection: $gameVM.mode) {
+                ForEach(GameMode.allCases, id: \.self) { mode in
+                    Text(mode.rawValue).tag(mode)
+                }
+            }
+            .pickerStyle(.segmented)
         }
     }
 }
@@ -83,7 +105,6 @@ struct FingerFlower: View {
         }
     }
 }
-
 
 #Preview(traits: .fixedLayout(width: 1000, height: 700)) {
     GameView()

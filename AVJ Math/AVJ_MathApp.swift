@@ -11,7 +11,9 @@ import SwiftUI
 struct AVJ_MathApp: App {
     var body: some Scene {
         WindowGroup {
-            GameView()
+            NavigationStack {
+                GameView()
+            }
         }
     }
 }

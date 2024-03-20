@@ -5,10 +5,17 @@
 //  Created by Jonas Wallmann on 19.03.24.
 //
 
-import Foundation
+import SwiftUI
+
+enum GameMode: String, CaseIterable {
+    case toFive = "Five"
+    case toTen = "Ten"
+}
 
 @Observable
 class GameVM {
+    public var mode: GameMode = .toFive
+
     private(set) var searchedNumber = 0
 
     private(set) var correctAnswer = false
@@ -19,18 +26,34 @@ class GameVM {
     }
 
     func newFingerCount(_ count: Int) {
-        if count == searchedNumber {
-            correctAnswer = true
-            correctAnswerCount += 1
+        if correctAnswer { return }
 
-            DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+        withAnimation {
+            if count == searchedNumber {
+                correctAnswer = true
+                correctAnswerCount += 1
+
                 self.newSearchNumber()
-                self.correctAnswer = false
+
+                DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+                    self.correctAnswer = false
+                }
             }
         }
     }
 
     func newSearchNumber() {
-        searchedNumber = Int.random(in: 0 ... 10)
+        let currentNumber = searchedNumber
+
+        switch mode {
+        case .toFive:
+            searchedNumber = Int.random(in: 0 ... 5)
+        case .toTen:
+            searchedNumber = Int.random(in: 0 ... 10)
+        }
+
+        if currentNumber == searchedNumber {
+            newSearchNumber()
+        }
     }
 }

@@ -23,11 +23,6 @@ struct FlowerView: View {
                     rive.triggerInput("Blume_auf_\(color)")
                 }
             }
-            .onAppear {
-                DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) {
-                    self.isOpen = true
-                }
-            }
     }
 }
 

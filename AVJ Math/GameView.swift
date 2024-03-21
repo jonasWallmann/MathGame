@@ -14,7 +14,7 @@ struct GameView: View {
     @State private var cardVM = CardCountVM()
 
     var body: some View {
-        ZStack {
+        ZStack(alignment: .top) {
             GeometryReader { geo in
                 ZStack {
                     CountView(
@@ -32,6 +32,18 @@ struct GameView: View {
                                 )
                         }
                     }
+
+//                    ForEach(fingerVM.points, id: \.id) { finger in
+//                        if finger.isCounted {
+//                            Circle()
+//                                .foregroundStyle(.indigo)
+//                                .frame(width: 30)
+//                                .position(
+//                                    x: finger.point.x * geo.size.width,
+//                                    y: finger.point.y * geo.size.height
+//                                )
+//                        }
+//                    }
                 }
                 .flipped(.horizontal)
             }

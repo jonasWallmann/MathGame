@@ -10,11 +10,11 @@
 		751A76772BA0B2DE0026D14F /* CardCountVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 751A76762BA0B2DE0026D14F /* CardCountVM.swift */; };
 		751A76792BA0BB700026D14F /* CountVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 751A76782BA0BB700026D14F /* CountVM.swift */; };
 		751A767B2BA0BB770026D14F /* CountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 751A767A2BA0BB770026D14F /* CountView.swift */; };
+		75784FF32BB0864200EF1406 /* RiveRuntime in Frameworks */ = {isa = PBXBuildFile; productRef = 75784FF22BB0864200EF1406 /* RiveRuntime */; };
 		7583FC632BAA34F600892851 /* flowernew.riv in Resources */ = {isa = PBXBuildFile; fileRef = 7583FC622BAA34F600892851 /* flowernew.riv */; };
 		7583FC642BAA34F600892851 /* flowernew.riv in Resources */ = {isa = PBXBuildFile; fileRef = 7583FC622BAA34F600892851 /* flowernew.riv */; };
 		7583FC652BAA34F600892851 /* flowernew.riv in Resources */ = {isa = PBXBuildFile; fileRef = 7583FC622BAA34F600892851 /* flowernew.riv */; };
 		75D6A1C02BAA125A004088B8 /* GameVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D6A1BF2BAA125A004088B8 /* GameVM.swift */; };
-		75D6A1FD2BAA2232004088B8 /* RiveRuntime in Frameworks */ = {isa = PBXBuildFile; productRef = 75D6A1FC2BAA2232004088B8 /* RiveRuntime */; };
 		75D6A2002BAA227D004088B8 /* FlowerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D6A1FF2BAA227D004088B8 /* FlowerView.swift */; };
 		75DF10612BA07AFC00BD7F6F /* AVJ_MathApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DF10602BA07AFC00BD7F6F /* AVJ_MathApp.swift */; };
 		75DF10632BA07AFC00BD7F6F /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DF10622BA07AFC00BD7F6F /* GameView.swift */; };
@@ -76,7 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				75D6A1FD2BAA2232004088B8 /* RiveRuntime in Frameworks */,
+				75784FF32BB0864200EF1406 /* RiveRuntime in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -105,6 +105,13 @@
 			path = Card;
 			sourceTree = "<group>";
 		};
+		75784FF12BB0864200EF1406 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		7583FC662BAA48D400892851 /* Flower */ = {
 			isa = PBXGroup;
 			children = (
@@ -130,6 +137,7 @@
 				75DF10712BA07AFE00BD7F6F /* AVJ MathTests */,
 				75DF107B2BA07AFE00BD7F6F /* AVJ MathUITests */,
 				75DF105E2BA07AFC00BD7F6F /* Products */,
+				75784FF12BB0864200EF1406 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -222,7 +230,7 @@
 			);
 			name = "AVJ Math";
 			packageProductDependencies = (
-				75D6A1FC2BAA2232004088B8 /* RiveRuntime */,
+				75784FF22BB0864200EF1406 /* RiveRuntime */,
 			);
 			productName = "AVJ Math";
 			productReference = 75DF105D2BA07AFC00BD7F6F /* AVJ Math.app */;
@@ -297,7 +305,7 @@
 			);
 			mainGroup = 75DF10542BA07AFC00BD7F6F;
 			packageReferences = (
-				75D6A1FB2BAA2232004088B8 /* XCRemoteSwiftPackageReference "rive-ios" */,
+				75784FF02BB0860500EF1406 /* XCRemoteSwiftPackageReference "rive-ios" */,
 			);
 			productRefGroup = 75DF105E2BA07AFC00BD7F6F /* Products */;
 			projectDirPath = "";
@@ -724,7 +732,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		75D6A1FB2BAA2232004088B8 /* XCRemoteSwiftPackageReference "rive-ios" */ = {
+		75784FF02BB0860500EF1406 /* XCRemoteSwiftPackageReference "rive-ios" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/rive-app/rive-ios.git";
 			requirement = {
@@ -735,9 +743,9 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		75D6A1FC2BAA2232004088B8 /* RiveRuntime */ = {
+		75784FF22BB0864200EF1406 /* RiveRuntime */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 75D6A1FB2BAA2232004088B8 /* XCRemoteSwiftPackageReference "rive-ios" */;
+			package = 75784FF02BB0860500EF1406 /* XCRemoteSwiftPackageReference "rive-ios" */;
 			productName = RiveRuntime;
 		};
 /* End XCSwiftPackageProductDependency section */

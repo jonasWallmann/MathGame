@@ -22,6 +22,7 @@ struct GameView: View {
                         fingerVM: fingerVM,
                         cardVM: cardVM
                     )
+                    .frame(maxHeight: .infinity)
 
                     ForEach(fingerVM.points, id: \.id) { finger in
                         if finger.isCounted {

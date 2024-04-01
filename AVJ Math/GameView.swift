@@ -8,43 +8,27 @@
 import SwiftUI
 
 struct GameView: View {
-    @State private var gameVM = GameVM()
+    @Bindable var gameVM: GameVM
 
-    @State private var fingerVM = FingerCountVM()
-    @State private var cardVM = CardCountVM()
+    @State var fingerVM: FingerCountVM
+
+    @State private var cameraVM = CameraVM()
 
     var body: some View {
         ZStack {
             GeometryReader { geo in
                 ZStack {
-                    CountView(
-                        vm: CountVM(newCountCallback: gameVM.newFingerCount),
-                        fingerVM: fingerVM,
-                        cardVM: cardVM
-                    )
-                    .frame(maxHeight: .infinity)
+                    CameraStreamView(cameraVM: cameraVM, newFrameCallback: fingerVM.newFrame)
+                        .frame(maxHeight: .infinity)
 
                     ForEach(fingerVM.points, id: \.id) { finger in
-                        if finger.isCounted {
-                            FlowerView(isOpen: gameVM.correctAnswer, color: "violet")
-                                .position(
-                                    x: finger.point.x * geo.size.width,
-                                    y: finger.point.y * geo.size.height
-                                )
-                        }
+                        FlowerView(isOpen: gameVM.flowersOpen, color: gameVM.flowerColor)
+                            .position(
+                                x: finger.point.x * geo.size.width,
+                                y: finger.point.y * geo.size.height
+                            )
+                            .opacity(finger.isCounted ? 1 : 0)
                     }
-
-//                    ForEach(fingerVM.points, id: \.id) { finger in
-//                        if finger.isCounted {
-//                            Circle()
-//                                .foregroundStyle(.indigo)
-//                                .frame(width: 32)
-//                                .position(
-//                                    x: finger.point.x * geo.size.width,
-//                                    y: finger.point.y * geo.size.height
-//                                )
-//                        }
-//                    }
                 }
                 .flipped(.horizontal)
             }
@@ -57,18 +41,13 @@ struct GameView: View {
                 Spacer()
             }
             .frame(height: 60)
+//            .background(gameVM.searchColor.opacity(0.7))
             .background(.thinMaterial)
             .frame(maxHeight: .infinity, alignment: .top)
 
             // bottom bar
-            HStack {
-                Spacer()
-                Text("\(gameVM.correctAnswerCount) ✅")
-                    .padding(.trailing, 20)
-            }
-            .frame(height: 100)
-            .background(.brown)
-            .frame(maxHeight: .infinity, alignment: .bottom)
+            MeadowView(count: gameVM.correctAnswerCount)
+                .frame(maxHeight: .infinity, alignment: .bottom)
         }
         .toolbar {
             Picker("Game mode", selection: $gameVM.mode) {
@@ -83,7 +62,8 @@ struct GameView: View {
     }
 }
 
-
 #Preview(traits: .fixedLayout(width: 500, height: 350)) {
-    GameView()
+    func newCount(count _: Int) {}
+
+    return GameView(gameVM: GameVM(), fingerVM: FingerCountVM(newCountCallback: newCount))
 }

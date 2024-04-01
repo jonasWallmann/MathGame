@@ -14,12 +14,22 @@ class FingerCountVM {
 
     public var points = [FingerPoint]()
 
+    private let newCountCallback: (Int) -> Void
+
+    init(newCountCallback: @escaping (Int) -> Void) {
+        self.newCountCallback = newCountCallback
+    }
+
     public func newFrame(_ frame: CGImage) {
         frameCount += 1
-        if frameCount % 3 == 0 { return }
+        if frameCount % 7 == 0 { return }
         frameCount = 0
 
         let analytics = analyse(frame: frame)
+
+        if count != analytics.fingerCount {
+            newCountCallback(analytics.fingerCount)
+        }
 
         count = analytics.fingerCount
         points = analytics.points
@@ -27,6 +37,7 @@ class FingerCountVM {
 
     private func analyse(frame: CGImage) -> (fingerCount: Int, points: [FingerPoint]) {
         let request = VNDetectHumanHandPoseRequest()
+
         request.maximumHandCount = 4
 
         let handler = VNImageRequestHandler(cgImage: frame)

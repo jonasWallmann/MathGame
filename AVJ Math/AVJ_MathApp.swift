@@ -9,10 +9,12 @@ import SwiftUI
 
 @main
 struct AVJ_MathApp: App {
+    @State private var gameVM = GameVM()
+
     var body: some Scene {
         WindowGroup {
             NavigationStack {
-                GameView()
+                GameView(gameVM: gameVM, fingerVM: FingerCountVM(newCountCallback: gameVM.newFingerCount))
             }
         }
     }

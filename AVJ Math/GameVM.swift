@@ -14,35 +14,49 @@ enum GameMode: String, CaseIterable {
 
 @Observable
 class GameVM {
-    public var mode: GameMode = .toFive
+    public var mode: GameMode = .toTen
 
-    private(set) var searchedNumber = 0
-    private(set) var searchedNumberInFramesCount = 0
+    private(set) var searchedNumber = 1
 
     private(set) var correctAnswer = false
     private(set) var correctAnswerCount = 0
 
+    private(set) var flowersOpen = true
+
+    private(set) var flowerColor: Color = .pink
+    private let colors: [Color] = [.black, .pink, .red, .green, .blue, .purple, .cyan, .indigo, .orange, .mint, .teal]
+
+    public var searchColor: Color {
+        colors[searchedNumber]
+    }
+
     init() {
         newSearchNumber()
-        correctAnswerCount = UserDefaults.standard.integer(forKey: "CORRECT_ANSWER_COUNT_KEY")
+//        correctAnswerCount = UserDefaults.standard.integer(forKey: "CORRECT_ANSWER_COUNT_KEY")
     }
 
     func newFingerCount(_ count: Int) {
-        if correctAnswer { return }
+        correctAnswer = (count == searchedNumber)
+        flowerColor = colors[count]
 
-        if count == searchedNumber {
-            searchedNumberInFramesCount += 1
-
-            if searchedNumberInFramesCount < 4 { return }
-
-            searchedNumberInFramesCount = 0
-            correctAnswer = true
+        if correctAnswer {
             correctAnswerCount += 1
-
             newSearchNumber()
 
-            DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
-                self.correctAnswer = false
+            var newPossibleColors = colors
+            newPossibleColors.removeAll(where: { $0 == flowerColor })
+
+//            withAnimation(.easeInOut(duration: 0.7)) {
+                flowersOpen = true
+//            }
+
+            let currentCorrectAnswerCount = correctAnswerCount
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.7) {
+                if currentCorrectAnswerCount == self.correctAnswerCount {
+//                    withAnimation(.easeInOut(duration: 1.5)) {
+//                        self.flowersOpen = false
+//                    }
+                }
             }
         }
     }
@@ -67,6 +81,6 @@ class GameVM {
     }
 
     public func retrieveCount() {
-        correctAnswerCount = UserDefaults.standard.integer(forKey: "CORRECT_ANSWER_COUNT_KEY")
+//        correctAnswerCount = UserDefaults.standard.integer(forKey: "CORRECT_ANSWER_COUNT_KEY")
     }
 }

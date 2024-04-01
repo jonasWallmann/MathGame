@@ -11,14 +11,21 @@ import SwiftUI
 struct CameraStreamView: View {
     @Bindable var cameraVM: CameraVM
 
+    let newFrameCallback: (CGImage) -> Void
+
     var body: some View {
-        if let cgImage = cameraVM.currentFrame {
-            Image(cgImage, scale: 1, label: Text("Camera"))
-                .resizable()
-                .scaledToFit()
-        } else {
-            ProgressView()
-                .frame(maxWidth: .infinity, maxHeight: .infinity)
+        Group {
+            if let cgImage = cameraVM.currentFrame {
+                Image(cgImage, scale: 1, label: Text("Camera"))
+                    .resizable()
+                    .scaledToFit()
+            } else {
+                ProgressView()
+                    .frame(maxWidth: .infinity, maxHeight: .infinity)
+            }
+        }
+        .onAppear {
+            cameraVM.newFrameCallback(newFrameCallback)
         }
     }
 }
@@ -38,6 +45,8 @@ extension View {
 }
 
 #Preview {
-    CameraStreamView(cameraVM: CameraVM())
+    func newImage(img: CGImage) { }
+
+    return CameraStreamView(cameraVM: CameraVM(), newFrameCallback: newImage)
 }
 

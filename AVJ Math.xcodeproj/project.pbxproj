@@ -8,14 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		751A76772BA0B2DE0026D14F /* CardCountVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 751A76762BA0B2DE0026D14F /* CardCountVM.swift */; };
-		751A76792BA0BB700026D14F /* CountVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 751A76782BA0BB700026D14F /* CountVM.swift */; };
-		751A767B2BA0BB770026D14F /* CountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 751A767A2BA0BB770026D14F /* CountView.swift */; };
+		754BBD432BB9EC2B00F13389 /* FlowerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754BBD422BB9EC2B00F13389 /* FlowerView.swift */; };
 		75784FF32BB0864200EF1406 /* RiveRuntime in Frameworks */ = {isa = PBXBuildFile; productRef = 75784FF22BB0864200EF1406 /* RiveRuntime */; };
-		7583FC632BAA34F600892851 /* flowernew.riv in Resources */ = {isa = PBXBuildFile; fileRef = 7583FC622BAA34F600892851 /* flowernew.riv */; };
-		7583FC642BAA34F600892851 /* flowernew.riv in Resources */ = {isa = PBXBuildFile; fileRef = 7583FC622BAA34F600892851 /* flowernew.riv */; };
-		7583FC652BAA34F600892851 /* flowernew.riv in Resources */ = {isa = PBXBuildFile; fileRef = 7583FC622BAA34F600892851 /* flowernew.riv */; };
 		75D6A1C02BAA125A004088B8 /* GameVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D6A1BF2BAA125A004088B8 /* GameVM.swift */; };
-		75D6A2002BAA227D004088B8 /* FlowerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D6A1FF2BAA227D004088B8 /* FlowerView.swift */; };
+		75D6A2002BAA227D004088B8 /* FlowerRiveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D6A1FF2BAA227D004088B8 /* FlowerRiveView.swift */; };
 		75DF10612BA07AFC00BD7F6F /* AVJ_MathApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DF10602BA07AFC00BD7F6F /* AVJ_MathApp.swift */; };
 		75DF10632BA07AFC00BD7F6F /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DF10622BA07AFC00BD7F6F /* GameView.swift */; };
 		75DF10652BA07AFE00BD7F6F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75DF10642BA07AFE00BD7F6F /* Assets.xcassets */; };
@@ -27,6 +23,18 @@
 		75DF10912BA07B2800BD7F6F /* CameraVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DF108E2BA07B2800BD7F6F /* CameraVM.swift */; };
 		75DF10952BA07B2D00BD7F6F /* FingersOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DF10922BA07B2D00BD7F6F /* FingersOverlay.swift */; };
 		75DF10962BA07B2D00BD7F6F /* FingerCountVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DF10932BA07B2D00BD7F6F /* FingerCountVM.swift */; };
+		75F6B75E2BB9CA31003EC311 /* flower.riv in Resources */ = {isa = PBXBuildFile; fileRef = 75F6B75C2BB9CA31003EC311 /* flower.riv */; };
+		75F6B75F2BB9CA31003EC311 /* flower.riv in Resources */ = {isa = PBXBuildFile; fileRef = 75F6B75C2BB9CA31003EC311 /* flower.riv */; };
+		75F6B7602BB9CA31003EC311 /* flower.riv in Resources */ = {isa = PBXBuildFile; fileRef = 75F6B75C2BB9CA31003EC311 /* flower.riv */; };
+		75F6B7612BB9CA31003EC311 /* meadow.riv in Resources */ = {isa = PBXBuildFile; fileRef = 75F6B75D2BB9CA31003EC311 /* meadow.riv */; };
+		75F6B7622BB9CA31003EC311 /* meadow.riv in Resources */ = {isa = PBXBuildFile; fileRef = 75F6B75D2BB9CA31003EC311 /* meadow.riv */; };
+		75F6B7632BB9CA31003EC311 /* meadow.riv in Resources */ = {isa = PBXBuildFile; fileRef = 75F6B75D2BB9CA31003EC311 /* meadow.riv */; };
+		75F6B7652BB9D0D2003EC311 /* MeadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F6B7642BB9D0D2003EC311 /* MeadowView.swift */; };
+		75F6B7662BB9D0D2003EC311 /* MeadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F6B7642BB9D0D2003EC311 /* MeadowView.swift */; };
+		75F6B7672BB9D0D2003EC311 /* MeadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F6B7642BB9D0D2003EC311 /* MeadowView.swift */; };
+		75F6B76D2BB9D673003EC311 /* FlowerOvuleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F6B76C2BB9D673003EC311 /* FlowerOvuleView.swift */; };
+		75F6B76E2BB9D673003EC311 /* FlowerOvuleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F6B76C2BB9D673003EC311 /* FlowerOvuleView.swift */; };
+		75F6B76F2BB9D673003EC311 /* FlowerOvuleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F6B76C2BB9D673003EC311 /* FlowerOvuleView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,11 +56,9 @@
 
 /* Begin PBXFileReference section */
 		751A76762BA0B2DE0026D14F /* CardCountVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCountVM.swift; sourceTree = "<group>"; };
-		751A76782BA0BB700026D14F /* CountVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountVM.swift; sourceTree = "<group>"; };
-		751A767A2BA0BB770026D14F /* CountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountView.swift; sourceTree = "<group>"; };
-		7583FC622BAA34F600892851 /* flowernew.riv */ = {isa = PBXFileReference; lastKnownFileType = file; path = flowernew.riv; sourceTree = "<group>"; };
+		754BBD422BB9EC2B00F13389 /* FlowerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowerView.swift; sourceTree = "<group>"; };
 		75D6A1BF2BAA125A004088B8 /* GameVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameVM.swift; sourceTree = "<group>"; };
-		75D6A1FF2BAA227D004088B8 /* FlowerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowerView.swift; sourceTree = "<group>"; };
+		75D6A1FF2BAA227D004088B8 /* FlowerRiveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowerRiveView.swift; sourceTree = "<group>"; };
 		75DF105D2BA07AFC00BD7F6F /* AVJ Math.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AVJ Math.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		75DF10602BA07AFC00BD7F6F /* AVJ_MathApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AVJ_MathApp.swift; sourceTree = "<group>"; };
 		75DF10622BA07AFC00BD7F6F /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
@@ -69,6 +75,10 @@
 		75DF10922BA07B2D00BD7F6F /* FingersOverlay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FingersOverlay.swift; sourceTree = "<group>"; };
 		75DF10932BA07B2D00BD7F6F /* FingerCountVM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FingerCountVM.swift; sourceTree = "<group>"; };
 		75F571942BAC552000AE33A0 /* AVJ MathDebug.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "AVJ MathDebug.entitlements"; sourceTree = "<group>"; };
+		75F6B75C2BB9CA31003EC311 /* flower.riv */ = {isa = PBXFileReference; lastKnownFileType = file; path = flower.riv; sourceTree = "<group>"; };
+		75F6B75D2BB9CA31003EC311 /* meadow.riv */ = {isa = PBXFileReference; lastKnownFileType = file; path = meadow.riv; sourceTree = "<group>"; };
+		75F6B7642BB9D0D2003EC311 /* MeadowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeadowView.swift; sourceTree = "<group>"; };
+		75F6B76C2BB9D673003EC311 /* FlowerOvuleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowerOvuleView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,22 +122,17 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		7583FC662BAA48D400892851 /* Flower */ = {
+		7583FC662BAA48D400892851 /* Rive */ = {
 			isa = PBXGroup;
 			children = (
-				7583FC622BAA34F600892851 /* flowernew.riv */,
-				75D6A1FF2BAA227D004088B8 /* FlowerView.swift */,
+				75F6B75C2BB9CA31003EC311 /* flower.riv */,
+				75D6A1FF2BAA227D004088B8 /* FlowerRiveView.swift */,
+				754BBD422BB9EC2B00F13389 /* FlowerView.swift */,
+				75F6B76C2BB9D673003EC311 /* FlowerOvuleView.swift */,
+				75F6B75D2BB9CA31003EC311 /* meadow.riv */,
+				75F6B7642BB9D0D2003EC311 /* MeadowView.swift */,
 			);
-			path = Flower;
-			sourceTree = "<group>";
-		};
-		75D6A1C12BAA131C004088B8 /* Counting */ = {
-			isa = PBXGroup;
-			children = (
-				751A76782BA0BB700026D14F /* CountVM.swift */,
-				751A767A2BA0BB770026D14F /* CountView.swift */,
-			);
-			path = Counting;
+			path = Rive;
 			sourceTree = "<group>";
 		};
 		75DF10542BA07AFC00BD7F6F = {
@@ -154,17 +159,16 @@
 		75DF105F2BA07AFC00BD7F6F /* AVJ Math */ = {
 			isa = PBXGroup;
 			children = (
+				75DF10662BA07AFE00BD7F6F /* AVJ_Math.entitlements */,
 				75F571942BAC552000AE33A0 /* AVJ MathDebug.entitlements */,
 				75DF10642BA07AFE00BD7F6F /* Assets.xcassets */,
-				75DF10662BA07AFE00BD7F6F /* AVJ_Math.entitlements */,
 				75DF10602BA07AFC00BD7F6F /* AVJ_MathApp.swift */,
 				75D6A1BF2BAA125A004088B8 /* GameVM.swift */,
 				75DF10622BA07AFC00BD7F6F /* GameView.swift */,
-				75D6A1C12BAA131C004088B8 /* Counting */,
 				75DF108F2BA07B2800BD7F6F /* Camera */,
 				75DF10942BA07B2D00BD7F6F /* Finger */,
 				751A76752BA0B2CD0026D14F /* Card */,
-				7583FC662BAA48D400892851 /* Flower */,
+				7583FC662BAA48D400892851 /* Rive */,
 				75DF10672BA07AFE00BD7F6F /* Preview Content */,
 			);
 			path = "AVJ Math";
@@ -323,9 +327,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75F6B7612BB9CA31003EC311 /* meadow.riv in Resources */,
+				75F6B75E2BB9CA31003EC311 /* flower.riv in Resources */,
 				75DF10692BA07AFE00BD7F6F /* Preview Assets.xcassets in Resources */,
 				75DF10652BA07AFE00BD7F6F /* Assets.xcassets in Resources */,
-				7583FC632BAA34F600892851 /* flowernew.riv in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -333,7 +338,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7583FC642BAA34F600892851 /* flowernew.riv in Resources */,
+				75F6B7622BB9CA31003EC311 /* meadow.riv in Resources */,
+				75F6B75F2BB9CA31003EC311 /* flower.riv in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,7 +347,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7583FC652BAA34F600892851 /* flowernew.riv in Resources */,
+				75F6B7632BB9CA31003EC311 /* meadow.riv in Resources */,
+				75F6B7602BB9CA31003EC311 /* flower.riv in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -352,17 +359,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75F6B76D2BB9D673003EC311 /* FlowerOvuleView.swift in Sources */,
 				751A76772BA0B2DE0026D14F /* CardCountVM.swift in Sources */,
 				75DF10902BA07B2800BD7F6F /* CameraStreamView.swift in Sources */,
 				75DF10952BA07B2D00BD7F6F /* FingersOverlay.swift in Sources */,
 				75DF10962BA07B2D00BD7F6F /* FingerCountVM.swift in Sources */,
-				751A76792BA0BB700026D14F /* CountVM.swift in Sources */,
 				75DF10912BA07B2800BD7F6F /* CameraVM.swift in Sources */,
 				75DF10632BA07AFC00BD7F6F /* GameView.swift in Sources */,
+				754BBD432BB9EC2B00F13389 /* FlowerView.swift in Sources */,
+				75F6B7652BB9D0D2003EC311 /* MeadowView.swift in Sources */,
 				75DF10612BA07AFC00BD7F6F /* AVJ_MathApp.swift in Sources */,
-				75D6A2002BAA227D004088B8 /* FlowerView.swift in Sources */,
+				75D6A2002BAA227D004088B8 /* FlowerRiveView.swift in Sources */,
 				75D6A1C02BAA125A004088B8 /* GameVM.swift in Sources */,
-				751A767B2BA0BB770026D14F /* CountView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -371,6 +379,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				75DF10732BA07AFE00BD7F6F /* AVJ_MathTests.swift in Sources */,
+				75F6B76E2BB9D673003EC311 /* FlowerOvuleView.swift in Sources */,
+				75F6B7662BB9D0D2003EC311 /* MeadowView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -378,7 +388,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75F6B76F2BB9D673003EC311 /* FlowerOvuleView.swift in Sources */,
 				75DF107F2BA07AFE00BD7F6F /* AVJ_MathUITestsLaunchTests.swift in Sources */,
+				75F6B7672BB9D0D2003EC311 /* MeadowView.swift in Sources */,
 				75DF107D2BA07AFE00BD7F6F /* AVJ_MathUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

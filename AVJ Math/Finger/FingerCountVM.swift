@@ -27,9 +27,7 @@ class FingerCountVM {
 
         let analytics = analyse(frame: frame)
 
-        if count != analytics.fingerCount {
-            newCountCallback(analytics.fingerCount)
-        }
+        newCountCallback(analytics.fingerCount)
 
         count = analytics.fingerCount
         points = analytics.points
@@ -38,7 +36,7 @@ class FingerCountVM {
     private func analyse(frame: CGImage) -> (fingerCount: Int, points: [FingerPoint]) {
         let request = VNDetectHumanHandPoseRequest()
 
-        request.maximumHandCount = 4
+        request.maximumHandCount = 2
 
         let handler = VNImageRequestHandler(cgImage: frame)
 

@@ -37,10 +37,10 @@ struct GameView: View {
             HStack {
                 Spacer()
                 Text(gameVM.searchedNumber.description)
-                    .font(.largeTitle)
+                    .font(.system(size: 40))
                 Spacer()
             }
-            .frame(height: 60)
+            .padding(.vertical, 12)
 //            .background(gameVM.searchColor.opacity(0.7))
             .background(.thinMaterial)
             .frame(maxHeight: .infinity, alignment: .top)
@@ -50,12 +50,25 @@ struct GameView: View {
                 .frame(maxHeight: .infinity, alignment: .bottom)
         }
         .toolbar {
-            Picker("Game mode", selection: $gameVM.mode) {
-                ForEach(GameMode.allCases, id: \.self) { mode in
-                    Text(mode.rawValue).tag(mode)
+            HStack {
+                Text("Fingers")
+                Picker("Game mode", selection: $gameVM.mode) {
+                    ForEach(GameMode.allCases, id: \.self) { mode in
+                        Text(mode.rawValue).tag(mode)
+                    }
+                }
+                .pickerStyle(.segmented)
+            }
+
+            HStack {
+                Text("Frames")
+                Picker("Frames", selection: $gameVM.rightNumberInFramesBeforeSuccessCount) {
+                    ForEach(1 ..< 20) { frames in
+                        Text(frames.description).tag(frames)
+                    }
                 }
             }
-            .pickerStyle(.segmented)
+            .padding(.leading, 32)
         }
         .onAppear(perform: gameVM.retrieveCount)
         .onDisappear(perform: gameVM.saveCount)

@@ -26,6 +26,9 @@ class GameVM {
     private(set) var flowerColor: Color = .pink
     private let colors: [Color] = [.black, .pink, .red, .green, .blue, .purple, .cyan, .indigo, .orange, .mint, .teal]
 
+    public var rightNumberInFramesBeforeSuccessCount = 7
+    private var rightNumberInFramesCount = 0
+
     public var searchColor: Color {
         colors[searchedNumber]
     }
@@ -36,8 +39,20 @@ class GameVM {
     }
 
     func newFingerCount(_ count: Int) {
-        correctAnswer = (count == searchedNumber)
-        flowerColor = colors[count]
+        if count < colors.count {
+            flowerColor = colors[count]
+        } else {
+            flowerColor = .white
+        }
+
+        if count != searchedNumber { return }
+
+        rightNumberInFramesCount += 1
+
+        if rightNumberInFramesBeforeSuccessCount > rightNumberInFramesCount { return }
+
+        correctAnswer = true
+        rightNumberInFramesCount = 0
 
         if correctAnswer {
             correctAnswerCount += 1

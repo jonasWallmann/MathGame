@@ -18,15 +18,30 @@ struct MeadowView: View {
     var body: some View {
         rive.view()
             .onChange(of: count) { _, _ in
-                guard let openSpot = openSpots.randomElement() else { return }
-
-                rive.setInput("Number 1", value: Double(openSpot))
-
-                openSpots.removeAll(where: { $0 == openSpot })
+                addFlower()
             }
+            .onAppear {
+                initialFlowers()
+            }
+    }
+
+    private func addFlower() {
+        guard let openSpot = openSpots.randomElement() else { return }
+
+        rive.setInput("Number 1", value: Double(openSpot))
+
+        openSpots.removeAll(where: { $0 == openSpot })
+    }
+
+    private func initialFlowers() {
+        for i in 0 ..< count {
+            DispatchQueue.main.asyncAfter(deadline: .now() + Double(i) / 50) {
+                self.addFlower()
+            }
+        }
     }
 }
 
 #Preview {
-    MeadowView(count: 5)
+    MeadowView(count: 400)
 }

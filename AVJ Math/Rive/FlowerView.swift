@@ -33,8 +33,8 @@ struct LeaveView: View {
     var body: some View {
         Ellipse()
             .foregroundStyle(color)
-            .frame(maxWidth: isOpen ? 15 : 0, maxHeight: isOpen ? 40 : 0)
-            .opacity(0.7)
+            .frame(maxWidth: isOpen ? 8 : 0, maxHeight: isOpen ? 40 : 0)
+//            .opacity(0.7)
     }
 }
 
@@ -70,10 +70,10 @@ struct TestView: View {
 }
 
 #Preview("Flower") {
-    FlowerView(isOpen: true, color: .orange)
+    FlowerView(isOpen: true, color: .leave)
         .frame(width: 400, height: 400)
 }
 
 #Preview("Leave") {
-    LeaveView(isOpen: true, color: .pink)
+    LeaveView(isOpen: true, color: .leave)
 }

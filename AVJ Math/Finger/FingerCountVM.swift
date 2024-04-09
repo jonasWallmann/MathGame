@@ -22,7 +22,7 @@ class FingerCountVM {
 
     public func newFrame(_ frame: CGImage) {
         frameCount += 1
-        if frameCount % 7 == 0 { return }
+        if frameCount % 8 == 0 { return }
         frameCount = 0
 
         let analytics = analyse(frame: frame)

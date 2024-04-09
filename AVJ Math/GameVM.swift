@@ -23,10 +23,10 @@ class GameVM {
 
     private(set) var flowersOpen = true
 
-    private(set) var flowerColor: Color = .pink
+    private(set) var flowerColor: Color = .leave
     private let colors: [Color] = [.black, .pink, .red, .green, .blue, .purple, .cyan, .indigo, .orange, .mint, .teal]
 
-    public var rightNumberInFramesBeforeSuccessCount = 7
+    public var rightNumberInFramesBeforeSuccessCount = 3
     private var rightNumberInFramesCount = 0
 
     public var searchColor: Color {
@@ -39,11 +39,11 @@ class GameVM {
     }
 
     func newFingerCount(_ count: Int) {
-        if count < colors.count {
-            flowerColor = colors[count]
-        } else {
-            flowerColor = .white
-        }
+//        if count < colors.count {
+//            flowerColor = colors[count]
+//        } else {
+//            flowerColor = .white
+//        }
 
         if count != searchedNumber { return }
 

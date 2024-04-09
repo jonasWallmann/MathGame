@@ -13,7 +13,7 @@ struct MeadowView: View {
 
     let count: Int
 
-    @State private var openSpots = Array(1 ... 17)
+    @State private var openSpots = Array(0 ... 88)
 
     var body: some View {
         rive.view()
@@ -43,5 +43,5 @@ struct MeadowView: View {
 }
 
 #Preview {
-    MeadowView(count: 400)
+    MeadowView(count: 88)
 }

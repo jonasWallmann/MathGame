@@ -26,15 +26,18 @@
 		75F6B75E2BB9CA31003EC311 /* flower.riv in Resources */ = {isa = PBXBuildFile; fileRef = 75F6B75C2BB9CA31003EC311 /* flower.riv */; };
 		75F6B75F2BB9CA31003EC311 /* flower.riv in Resources */ = {isa = PBXBuildFile; fileRef = 75F6B75C2BB9CA31003EC311 /* flower.riv */; };
 		75F6B7602BB9CA31003EC311 /* flower.riv in Resources */ = {isa = PBXBuildFile; fileRef = 75F6B75C2BB9CA31003EC311 /* flower.riv */; };
-		75F6B7612BB9CA31003EC311 /* meadow.riv in Resources */ = {isa = PBXBuildFile; fileRef = 75F6B75D2BB9CA31003EC311 /* meadow.riv */; };
-		75F6B7622BB9CA31003EC311 /* meadow.riv in Resources */ = {isa = PBXBuildFile; fileRef = 75F6B75D2BB9CA31003EC311 /* meadow.riv */; };
-		75F6B7632BB9CA31003EC311 /* meadow.riv in Resources */ = {isa = PBXBuildFile; fileRef = 75F6B75D2BB9CA31003EC311 /* meadow.riv */; };
 		75F6B7652BB9D0D2003EC311 /* MeadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F6B7642BB9D0D2003EC311 /* MeadowView.swift */; };
 		75F6B7662BB9D0D2003EC311 /* MeadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F6B7642BB9D0D2003EC311 /* MeadowView.swift */; };
 		75F6B7672BB9D0D2003EC311 /* MeadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F6B7642BB9D0D2003EC311 /* MeadowView.swift */; };
 		75F6B76D2BB9D673003EC311 /* FlowerOvuleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F6B76C2BB9D673003EC311 /* FlowerOvuleView.swift */; };
 		75F6B76E2BB9D673003EC311 /* FlowerOvuleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F6B76C2BB9D673003EC311 /* FlowerOvuleView.swift */; };
 		75F6B76F2BB9D673003EC311 /* FlowerOvuleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F6B76C2BB9D673003EC311 /* FlowerOvuleView.swift */; };
+		D37BEE942BC560180020A532 /* meadow.riv in Resources */ = {isa = PBXBuildFile; fileRef = D37BEE932BC560180020A532 /* meadow.riv */; };
+		D37BEE952BC560180020A532 /* meadow.riv in Resources */ = {isa = PBXBuildFile; fileRef = D37BEE932BC560180020A532 /* meadow.riv */; };
+		D37BEE962BC560180020A532 /* meadow.riv in Resources */ = {isa = PBXBuildFile; fileRef = D37BEE932BC560180020A532 /* meadow.riv */; };
+		D37BEE982BC562170020A532 /* SearchedNumberView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37BEE972BC562170020A532 /* SearchedNumberView.swift */; };
+		D37BEE992BC562170020A532 /* SearchedNumberView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37BEE972BC562170020A532 /* SearchedNumberView.swift */; };
+		D37BEE9A2BC562170020A532 /* SearchedNumberView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37BEE972BC562170020A532 /* SearchedNumberView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,9 +79,10 @@
 		75DF10932BA07B2D00BD7F6F /* FingerCountVM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FingerCountVM.swift; sourceTree = "<group>"; };
 		75F571942BAC552000AE33A0 /* AVJ MathDebug.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "AVJ MathDebug.entitlements"; sourceTree = "<group>"; };
 		75F6B75C2BB9CA31003EC311 /* flower.riv */ = {isa = PBXFileReference; lastKnownFileType = file; path = flower.riv; sourceTree = "<group>"; };
-		75F6B75D2BB9CA31003EC311 /* meadow.riv */ = {isa = PBXFileReference; lastKnownFileType = file; path = meadow.riv; sourceTree = "<group>"; };
 		75F6B7642BB9D0D2003EC311 /* MeadowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeadowView.swift; sourceTree = "<group>"; };
 		75F6B76C2BB9D673003EC311 /* FlowerOvuleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowerOvuleView.swift; sourceTree = "<group>"; };
+		D37BEE932BC560180020A532 /* meadow.riv */ = {isa = PBXFileReference; lastKnownFileType = file; path = meadow.riv; sourceTree = "<group>"; };
+		D37BEE972BC562170020A532 /* SearchedNumberView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchedNumberView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,7 +133,7 @@
 				75D6A1FF2BAA227D004088B8 /* FlowerRiveView.swift */,
 				754BBD422BB9EC2B00F13389 /* FlowerView.swift */,
 				75F6B76C2BB9D673003EC311 /* FlowerOvuleView.swift */,
-				75F6B75D2BB9CA31003EC311 /* meadow.riv */,
+				D37BEE932BC560180020A532 /* meadow.riv */,
 				75F6B7642BB9D0D2003EC311 /* MeadowView.swift */,
 			);
 			path = Rive;
@@ -165,6 +169,7 @@
 				75DF10602BA07AFC00BD7F6F /* AVJ_MathApp.swift */,
 				75D6A1BF2BAA125A004088B8 /* GameVM.swift */,
 				75DF10622BA07AFC00BD7F6F /* GameView.swift */,
+				D37BEE972BC562170020A532 /* SearchedNumberView.swift */,
 				75DF108F2BA07B2800BD7F6F /* Camera */,
 				75DF10942BA07B2D00BD7F6F /* Finger */,
 				751A76752BA0B2CD0026D14F /* Card */,
@@ -327,9 +332,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				75F6B7612BB9CA31003EC311 /* meadow.riv in Resources */,
 				75F6B75E2BB9CA31003EC311 /* flower.riv in Resources */,
 				75DF10692BA07AFE00BD7F6F /* Preview Assets.xcassets in Resources */,
+				D37BEE942BC560180020A532 /* meadow.riv in Resources */,
 				75DF10652BA07AFE00BD7F6F /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -338,7 +343,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				75F6B7622BB9CA31003EC311 /* meadow.riv in Resources */,
+				D37BEE952BC560180020A532 /* meadow.riv in Resources */,
 				75F6B75F2BB9CA31003EC311 /* flower.riv in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -347,7 +352,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				75F6B7632BB9CA31003EC311 /* meadow.riv in Resources */,
+				D37BEE962BC560180020A532 /* meadow.riv in Resources */,
 				75F6B7602BB9CA31003EC311 /* flower.riv in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -360,6 +365,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				75F6B76D2BB9D673003EC311 /* FlowerOvuleView.swift in Sources */,
+				D37BEE982BC562170020A532 /* SearchedNumberView.swift in Sources */,
 				751A76772BA0B2DE0026D14F /* CardCountVM.swift in Sources */,
 				75DF10902BA07B2800BD7F6F /* CameraStreamView.swift in Sources */,
 				75DF10952BA07B2D00BD7F6F /* FingersOverlay.swift in Sources */,
@@ -380,6 +386,7 @@
 			files = (
 				75DF10732BA07AFE00BD7F6F /* AVJ_MathTests.swift in Sources */,
 				75F6B76E2BB9D673003EC311 /* FlowerOvuleView.swift in Sources */,
+				D37BEE992BC562170020A532 /* SearchedNumberView.swift in Sources */,
 				75F6B7662BB9D0D2003EC311 /* MeadowView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -388,6 +395,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D37BEE9A2BC562170020A532 /* SearchedNumberView.swift in Sources */,
 				75F6B76F2BB9D673003EC311 /* FlowerOvuleView.swift in Sources */,
 				75DF107F2BA07AFE00BD7F6F /* AVJ_MathUITestsLaunchTests.swift in Sources */,
 				75F6B7672BB9D0D2003EC311 /* MeadowView.swift in Sources */,
@@ -535,7 +543,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"AVJ Math/Preview Content\"";
-				DEVELOPMENT_TEAM = 39M988G5YW;
+				DEVELOPMENT_TEAM = 9U452HTR9Y;
 				ENABLE_HARDENED_RUNTIME = NO;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -578,7 +586,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"AVJ Math/Preview Content\"";
-				DEVELOPMENT_TEAM = 39M988G5YW;
+				DEVELOPMENT_TEAM = 9U452HTR9Y;
 				ENABLE_HARDENED_RUNTIME = YES;
 				"ENABLE_HARDENED_RUNTIME[sdk=macosx*]" = YES;
 				ENABLE_PREVIEWS = YES;
@@ -619,7 +627,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 39M988G5YW;
+				DEVELOPMENT_TEAM = 9U452HTR9Y;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
 				MACOSX_DEPLOYMENT_TARGET = 14.3;
@@ -642,7 +650,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 39M988G5YW;
+				DEVELOPMENT_TEAM = 9U452HTR9Y;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
 				MACOSX_DEPLOYMENT_TARGET = 14.3;
@@ -664,12 +672,12 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 39M988G5YW;
+				DEVELOPMENT_TEAM = 9U452HTR9Y;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
 				MACOSX_DEPLOYMENT_TARGET = 14.3;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "jonaswallmann.com.AVJ-MathUITests";
+				PRODUCT_BUNDLE_IDENTIFIER = "violakempa.com.AVJ-MathUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
@@ -686,12 +694,12 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 39M988G5YW;
+				DEVELOPMENT_TEAM = 9U452HTR9Y;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
 				MACOSX_DEPLOYMENT_TARGET = 14.3;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "jonaswallmann.com.AVJ-MathUITests";
+				PRODUCT_BUNDLE_IDENTIFIER = "violakempa.com.AVJ-MathUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
